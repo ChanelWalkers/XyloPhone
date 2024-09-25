@@ -20,7 +20,7 @@ export default function App() {
   const playSound = async (soundFile) => {
     console.log('Loading Sound');
     const { sound } = await Audio.Sound.createAsync(soundFile);
-    setSounds((prevSounds) => [...prevSounds, sound]); // Keep track of all loaded sounds
+    setSounds((prevSounds) => [...prevSounds, sound]); 
 
     console.log('Playing Sound');
     await sound.playAsync();
